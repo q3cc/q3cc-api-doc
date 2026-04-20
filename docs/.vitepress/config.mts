@@ -8,7 +8,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'API 文档', link: '/api/' }
+      { text: 'API 文档', link: '/reference/' }
     ],
     sidebar: [
       {
@@ -20,19 +20,19 @@ export default defineConfig({
       {
         text: 'API 文档',
         items: [
-          { text: 'API 概览', link: '/api/' }
+          { text: 'API 概览', link: '/reference/' }
         ]
       },
       {
         text: '健康检查',
         items: [
-          { text: 'GET /api/ping', link: '/api/health/ping' }
+          { text: 'GET /api/ping', link: '/reference/health/ping' }
         ]
       },
       {
         text: '统计信息',
         items: [
-          { text: 'GET /api/info', link: '/api/stats/info' }
+          { text: 'GET /api/info', link: '/reference/stats/info' }
         ]
       }
     ],

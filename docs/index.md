@@ -6,11 +6,11 @@
 
 ### 健康检查
 
-- [`GET /api/ping`](/api/health/ping)
+- [`GET /api/ping`](/reference/health/ping)
 
 ### 统计信息
 
-- [`GET /api/info`](/api/stats/info)
+- [`GET /api/info`](/reference/stats/info)
 
 ## 快速示例
 
