@@ -33,7 +33,7 @@ export default defineConfig({
       {
         text: '图像服务',
         items: [
-          { text: 'GET img.q3cc.top', link: '/reference/image/random' }
+          { text: 'GET /img', link: '/reference/image/random' }
         ]
       }
     ],

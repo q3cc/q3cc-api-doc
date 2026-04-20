@@ -17,10 +17,10 @@
 
 ## 图像服务
 
-- [`GET https://img.q3cc.top`](/reference/image/random)
+- [`GET /img`](/reference/image/random)
   - 子类：随机图
-  - 用途：返回随机图地址（302）
-  - 响应：重定向到图片地址
+  - 用途：返回随机图地址
+  - 响应：`302` 重定向或 `type=json` JSON
 
 ## 快速导航
 
