@@ -1,4 +1,4 @@
-# `GET https://api.q3cc.top/img`
+# `GET /img`
 
 > 分组：图像服务（随机图）
 

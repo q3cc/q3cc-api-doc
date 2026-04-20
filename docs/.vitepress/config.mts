@@ -18,12 +18,6 @@ export default defineConfig({
         ]
       },
       {
-        text: 'API 文档',
-        items: [
-          { text: 'API 概览', link: '/reference/' }
-        ]
-      },
-      {
         text: '系统状态',
         items: [
           { text: 'GET /api/ping', link: '/reference/health/ping' },
