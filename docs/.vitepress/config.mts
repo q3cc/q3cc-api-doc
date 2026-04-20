@@ -6,6 +6,7 @@ export default defineConfig({
   lang: 'zh-CN',
   cleanUrls: true,
   themeConfig: {
+    logo: '/logo.svg',
     nav: [
       { text: '首页', link: '/' },
       { text: 'API 文档', link: '/reference/' }
