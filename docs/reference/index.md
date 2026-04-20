@@ -20,7 +20,7 @@
 - [`GET /img`](/reference/image/random)
   - 子类：随机图
   - 用途：返回随机图地址
-  - 响应：`302` 重定向或 `type=json` JSON
+  - 响应：`302` 重定向、`type=url` 纯文本直链、或 `type=json` JSON
 
 ## 快速导航
 
