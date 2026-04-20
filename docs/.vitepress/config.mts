@@ -29,6 +29,12 @@ export default defineConfig({
         items: [
           { text: 'GET /img', link: '/reference/image/random' }
         ]
+      },
+      {
+        text: '日历服务',
+        items: [
+          { text: 'GET /holidays', link: '/reference/calendar/holidays' }
+        ]
       }
     ],
     socialLinks: [

@@ -22,8 +22,16 @@
   - 用途：返回随机图地址
   - 响应：`302` 重定向、`type=url` 纯文本直链、或 `type=json` JSON
 
+## 日历服务
+
+- [`GET /holidays`](/reference/calendar/holidays)
+  - 子类：节假日
+  - 用途：查询某天是否放假、普通日或调休工作日
+  - 响应：JSON 或 `type=pithy` 纯文本
+
 ## 快速导航
 
 - 系统状态 / 健康检查 → [`/reference/health/ping`](/reference/health/ping)
 - 系统状态 / 统计信息 → [`/reference/stats/info`](/reference/stats/info)
 - 图像服务 / 随机图 → [`/reference/image/random`](/reference/image/random)
+- 日历服务 / 节假日 → [`/reference/calendar/holidays`](/reference/calendar/holidays)
