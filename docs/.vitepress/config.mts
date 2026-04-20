@@ -5,8 +5,8 @@ export default defineConfig({
   description: 'api.q3cc.top 接口说明文档',
   lang: 'zh-CN',
   cleanUrls: true,
+  head: [['link', { rel: 'icon', href: '/logo.jpg' }]],
   themeConfig: {
-    logo: '/logo.svg',
     nav: [
       { text: '首页', link: '/' },
       { text: 'API 文档', link: '/reference/' }
