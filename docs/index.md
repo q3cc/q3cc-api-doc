@@ -4,8 +4,13 @@
 
 ## 当前可用接口
 
-- [`GET /api/ping`](/api/)
-- [`GET /api/info`](/api/)
+### 健康检查
+
+- [`GET /api/ping`](/api/health/ping)
+
+### 统计信息
+
+- [`GET /api/info`](/api/stats/info)
 
 ## 快速示例
 

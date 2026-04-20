@@ -14,8 +14,25 @@ export default defineConfig({
       {
         text: '开始使用',
         items: [
-          { text: '概览', link: '/' },
-          { text: '首批 API', link: '/api/' }
+          { text: '概览', link: '/' }
+        ]
+      },
+      {
+        text: 'API 文档',
+        items: [
+          { text: 'API 概览', link: '/api/' }
+        ]
+      },
+      {
+        text: '健康检查',
+        items: [
+          { text: 'GET /api/ping', link: '/api/health/ping' }
+        ]
+      },
+      {
+        text: '统计信息',
+        items: [
+          { text: 'GET /api/info', link: '/api/stats/info' }
         ]
       }
     ],
