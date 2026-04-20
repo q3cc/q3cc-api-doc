@@ -33,7 +33,7 @@ export default defineConfig({
       {
         text: '日历服务',
         items: [
-          { text: 'GET /holidays', link: '/reference/calendar/holidays' }
+          { text: 'GET /api/holidays', link: '/reference/calendar/holidays' }
         ]
       }
     ],

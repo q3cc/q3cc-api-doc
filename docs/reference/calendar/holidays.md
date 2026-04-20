@@ -1,4 +1,4 @@
-# `GET /holidays`
+# `GET /api/holidays`
 
 > 分组：日历服务（节假日）
 
@@ -7,7 +7,7 @@
 ## 请求
 
 ```http
-GET /holidays HTTP/1.1
+GET /api/holidays HTTP/1.1
 Host: api.q3cc.top
 ```
 
@@ -38,7 +38,7 @@ Host: api.q3cc.top
 示例：
 
 ```bash
-curl "https://api.q3cc.top/holidays?type=pithy&y=2025&m=10&d=1"
+curl "https://api.q3cc.top/api/holidays?type=pithy&y=2025&m=10&d=1"
 ```
 
 示例响应：
@@ -64,9 +64,9 @@ ture
 示例：
 
 ```bash
-curl "https://api.q3cc.top/holidays?type=alarm&y=2026&m=4&d=20"
-curl "https://api.q3cc.top/holidays?type=alarm&y=2026&m=10&d=10"
-curl "https://api.q3cc.top/holidays?type=alarm&y=2025&m=10&d=1"
+curl "https://api.q3cc.top/api/holidays?type=alarm&y=2026&m=4&d=20"
+curl "https://api.q3cc.top/api/holidays?type=alarm&y=2026&m=10&d=10"
+curl "https://api.q3cc.top/api/holidays?type=alarm&y=2025&m=10&d=1"
 ```
 
 示例响应：
@@ -80,7 +80,7 @@ work
 示例：
 
 ```bash
-curl "https://api.q3cc.top/holidays?y=2025&m=10&d=1"
+curl "https://api.q3cc.top/api/holidays?y=2025&m=10&d=1"
 ```
 
 示例响应：
@@ -110,25 +110,25 @@ curl "https://api.q3cc.top/holidays?y=2025&m=10&d=1"
 查询今天：
 
 ```bash
-curl "https://api.q3cc.top/holidays"
+curl "https://api.q3cc.top/api/holidays"
 ```
 
 查询调休工作日：
 
 ```bash
-curl "https://api.q3cc.top/holidays?type=pithy&y=2026&m=10&d=10"
+curl "https://api.q3cc.top/api/holidays?type=pithy&y=2026&m=10&d=10"
 ```
 
 查询闹钟模式：
 
 ```bash
-curl "https://api.q3cc.top/holidays?type=alarm&y=2026&m=4&d=20"
+curl "https://api.q3cc.top/api/holidays?type=alarm&y=2026&m=4&d=20"
 ```
 
 查询普通日：
 
 ```bash
-curl "https://api.q3cc.top/holidays?y=2026&m=4&d=20"
+curl "https://api.q3cc.top/api/holidays?y=2026&m=4&d=20"
 ```
 
 ## 错误

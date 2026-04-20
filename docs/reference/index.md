@@ -24,7 +24,7 @@
 
 ## 日历服务
 
-- [`GET /holidays`](/reference/calendar/holidays)
+- [`GET /api/holidays`](/reference/calendar/holidays)
   - 子类：节假日
   - 用途：查询某天是否放假、普通日或调休工作日
   - 响应：JSON 或 `type=pithy` 纯文本
