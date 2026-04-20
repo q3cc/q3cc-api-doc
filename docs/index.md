@@ -4,13 +4,10 @@
 
 ## 当前可用接口
 
-### 健康检查
+### 系统状态
 
-- [`GET /api/ping`](/reference/health/ping)
-
-### 统计信息
-
-- [`GET /api/info`](/reference/stats/info)
+- [`GET /api/ping`](/reference/health/ping)（健康检查）
+- [`GET /api/info`](/reference/stats/info)（统计信息）
 
 ## 快速示例
 

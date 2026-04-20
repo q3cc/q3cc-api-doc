@@ -2,20 +2,20 @@
 
 首批 API 已按功能拆分为独立页面，便于后续继续扩展。
 
-## 健康检查
+## 系统状态
 
 - [`GET /api/ping`](/reference/health/ping)
+  - 子类：健康检查
   - 用途：接口健康检查
   - 响应：纯文本 `pong`
 
-## 统计信息
-
 - [`GET /api/info`](/reference/stats/info)
+  - 子类：统计信息
   - 用途：查询全站与当前请求用户的统计信息
   - 响应：JSON
   - 时间口径：固定使用 `UTC+8`
 
 ## 快速导航
 
-- 健康检查 → [`/reference/health/ping`](/reference/health/ping)
-- 统计信息 → [`/reference/stats/info`](/reference/stats/info)
+- 系统状态 / 健康检查 → [`/reference/health/ping`](/reference/health/ping)
+- 系统状态 / 统计信息 → [`/reference/stats/info`](/reference/stats/info)

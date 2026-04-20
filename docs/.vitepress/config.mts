@@ -24,14 +24,9 @@ export default defineConfig({
         ]
       },
       {
-        text: '健康检查',
+        text: '系统状态',
         items: [
-          { text: 'GET /api/ping', link: '/reference/health/ping' }
-        ]
-      },
-      {
-        text: '统计信息',
-        items: [
+          { text: 'GET /api/ping', link: '/reference/health/ping' },
           { text: 'GET /api/info', link: '/reference/stats/info' }
         ]
       }
