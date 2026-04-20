@@ -1,57 +1,23 @@
-# q3cc API 文档站
+---
+layout: home
 
-`api.q3cc.top` 用于托管接口说明文档，`api.q3cc.top/api/*` 由 Cloudflare Worker 提供 API 能力。
+hero:
+  name: "q3cc API"
+  text: "VitePress 文档站"
+  tagline: "api.q3cc.top 文档首页（/api/* 由 Worker 接管）"
+  actions:
+    - theme: brand
+      text: API 文档
+      link: /reference/
+    - theme: alt
+      text: GitHub
+      link: https://github.com/q3cc/q3cc-api-doc
 
-## 当前可用接口
-
-### 系统状态
-
-- [`GET /api/ping`](/reference/health/ping)（健康检查）
-- [`GET /api/info`](/reference/stats/info)（统计信息）
-
-## 快速示例
-
-### Ping
-
-```bash
-curl https://api.q3cc.top/api/ping
-```
-
-返回：
-
-```text
-pong
-```
-
-### Info
-
-```bash
-curl https://api.q3cc.top/api/info
-```
-
-返回示例：
-
-```json
-{
-  "timezone": "UTC+8",
-  "date": "2026-04-20",
-  "requestUser": "203.0.113.8",
-  "site": {
-    "totalRequests": 12,
-    "dailyRequests": 7
-  },
-  "requestUserStats": {
-    "totalRequests": 3,
-    "dailyRequests": 2
-  }
-}
-```
-
-## 统计说明
-
-- 时间分桶固定为 **UTC+8**
-- `/api/info` 返回值包含当前这一次请求
-- 用户识别顺序：
-  1. `CF-Connecting-IP`
-  2. `X-Forwarded-For` 的第一个 IP
-  3. `unknown`
+features:
+  - title: 系统状态接口
+    details: 提供 GET /api/ping 与 GET /api/info 两个首批接口说明。
+  - title: UTC+8 统计口径
+    details: /api/info 返回全站和请求用户的总量与当日量（UTC+8）。
+  - title: 路由拆分
+    details: 文档页走 /reference/*，API 请求走 /api/*，互不冲突。
+---
