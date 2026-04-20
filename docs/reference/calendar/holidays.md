@@ -19,6 +19,7 @@ Host: api.q3cc.top
 - `m`：月份
 - `d`：日期
 - `type=pithy`：直接返回短文本
+- `type=alarm`：返回闹钟模式工作/休息状态
 
 说明：
 
@@ -44,6 +45,34 @@ curl "https://api.q3cc.top/holidays?type=pithy&y=2025&m=10&d=1"
 
 ```text
 ture
+```
+
+## `type=alarm`
+
+返回值固定为以下 2 种之一：
+
+- `work`：工作日
+- `vacation`：非工作日
+
+判定规则：
+
+- 周一到周五，且不是法定节假日 → `work`
+- 调休工作日 → `work`
+- 节假日 → `vacation`
+- 普通周末 → `vacation`
+
+示例：
+
+```bash
+curl "https://api.q3cc.top/holidays?type=alarm&y=2026&m=4&d=20"
+curl "https://api.q3cc.top/holidays?type=alarm&y=2026&m=10&d=10"
+curl "https://api.q3cc.top/holidays?type=alarm&y=2025&m=10&d=1"
+```
+
+示例响应：
+
+```text
+work
 ```
 
 ## JSON 响应
@@ -88,6 +117,12 @@ curl "https://api.q3cc.top/holidays"
 
 ```bash
 curl "https://api.q3cc.top/holidays?type=pithy&y=2026&m=10&d=10"
+```
+
+查询闹钟模式：
+
+```bash
+curl "https://api.q3cc.top/holidays?type=alarm&y=2026&m=4&d=20"
 ```
 
 查询普通日：
