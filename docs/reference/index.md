@@ -15,7 +15,15 @@
   - 响应：JSON
   - 时间口径：固定使用 `UTC+8`
 
+## 图像服务
+
+- [`GET https://img.q3cc.top`](/reference/image/random)
+  - 子类：随机图
+  - 用途：返回随机图地址（302）
+  - 响应：重定向到图片地址
+
 ## 快速导航
 
 - 系统状态 / 健康检查 → [`/reference/health/ping`](/reference/health/ping)
 - 系统状态 / 统计信息 → [`/reference/stats/info`](/reference/stats/info)
+- 图像服务 / 随机图 → [`/reference/image/random`](/reference/image/random)

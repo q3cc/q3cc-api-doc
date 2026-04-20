@@ -29,6 +29,12 @@ export default defineConfig({
           { text: 'GET /api/ping', link: '/reference/health/ping' },
           { text: 'GET /api/info', link: '/reference/stats/info' }
         ]
+      },
+      {
+        text: '图像服务',
+        items: [
+          { text: 'GET img.q3cc.top', link: '/reference/image/random' }
+        ]
       }
     ],
     socialLinks: [
