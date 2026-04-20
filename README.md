@@ -1,4 +1,4 @@
-# q3cc-api-doc
+# Q3CC-api-doc
 
 VitePress documentation site for `api.q3cc.top`.
 

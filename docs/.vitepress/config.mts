@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 export default defineConfig({
-  title: 'q3cc API',
+  title: 'Q3CC API',
   description: 'api.q3cc.top 接口说明文档',
   lang: 'zh-CN',
   cleanUrls: true,
