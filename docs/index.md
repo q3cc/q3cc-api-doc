@@ -10,7 +10,7 @@ hero:
       text: API 文档
       link: /reference/
     - theme: alt
-      text: GitHub
-      link: https://github.com/q3cc/q3cc-api-doc
+      text: About
+      link: https://q3cc.top
 
 ---
