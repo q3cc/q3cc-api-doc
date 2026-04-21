@@ -15,7 +15,8 @@ export default defineConfig({
       {
         text: '开始使用',
         items: [
-          { text: '概览', link: '/' }
+          { text: '概览', link: '/' },
+          { text: 'API 文档', link: '/reference/' }
         ]
       },
       {
