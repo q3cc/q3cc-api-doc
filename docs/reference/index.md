@@ -22,6 +22,13 @@
   - 用途：返回随机图地址
   - 响应：`302` 重定向、`type=url` 纯文本直链、或 `type=json` JSON
 
+## 语录服务
+
+- [`GET /api/hitokoto`](/reference/content/hitokoto)
+  - 子类：一言
+  - 用途：从本地化句子包中随机返回一条一言
+  - 响应：JSON 或 `encode=text` / `type=text` 纯文本
+
 ## 日历服务
 
 - [`GET /api/holidays`](/reference/calendar/holidays)
@@ -34,4 +41,5 @@
 - 系统状态 / 健康检查 → [`/reference/health/ping`](/reference/health/ping)
 - 系统状态 / 统计信息 → [`/reference/stats/info`](/reference/stats/info)
 - 图像服务 / 随机图 → [`/reference/image/random`](/reference/image/random)
+- 语录服务 / 一言 → [`/reference/content/hitokoto`](/reference/content/hitokoto)
 - 日历服务 / 节假日 → [`/reference/calendar/holidays`](/reference/calendar/holidays)

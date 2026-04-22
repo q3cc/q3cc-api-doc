@@ -33,6 +33,12 @@ export default defineConfig({
         ]
       },
       {
+        text: '语录服务',
+        items: [
+          { text: 'GET /api/hitokoto', link: '/reference/content/hitokoto' }
+        ]
+      },
+      {
         text: '日历服务',
         items: [
           { text: 'GET /api/holidays', link: '/reference/calendar/holidays' }
