@@ -15,8 +15,7 @@ const info = ref<InfoResponse | null>(null);
 const footerData: FooterData = {
   author: {
     name: 'Q3CC',
-    startYear: 2026,
-    link: 'https://api.q3cc.top',
+    link: 'https://q3cc.top',
     text: 'All Rights Reserved.'
   }
 };
