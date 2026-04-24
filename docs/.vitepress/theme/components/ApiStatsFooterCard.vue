@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { Footer } from '@theojs/lumen';
 import { computed, onMounted, ref } from 'vue';
+import type { FooterData } from '@theojs/lumen';
 
 type InfoResponse = {
   site?: {
@@ -9,6 +11,15 @@ type InfoResponse = {
 };
 
 const info = ref<InfoResponse | null>(null);
+
+const footerData: FooterData = {
+  author: {
+    name: 'Q3CC',
+    startYear: 2026,
+    link: 'https://api.q3cc.top',
+    text: 'All Rights Reserved.'
+  }
+};
 
 const totalRequests = computed(() => info.value?.site?.totalRequests ?? 0);
 const dailyRequests = computed(() => info.value?.site?.dailyRequests ?? 0);
@@ -42,7 +53,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="q3cc-overview-footer">
+  <div class="q3cc-footer-wrap">
+    <Footer :Footer_Data="footerData" />
     <p class="q3cc-overview-text">
       全部API总调用 {{ formatNumber(totalRequests) }} 次,今日调用 {{ formatNumber(dailyRequests) }} 次
     </p>
@@ -50,22 +62,30 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.q3cc-overview-footer {
-  margin: 10px auto 16px;
+.q3cc-footer-wrap {
+  margin: 18px auto 18px;
   padding: 0 24px;
   max-width: 1152px;
-}
-
-.q3cc-overview-text {
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--vp-c-text-2);
   text-align: center;
 }
 
+.q3cc-overview-text {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--vp-c-text-2);
+}
+
+:deep(.footer) {
+  background: transparent;
+}
+
+:deep(.footer-info) {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
-  .q3cc-overview-footer {
+  .q3cc-footer-wrap {
     padding: 0 16px;
   }
 }
