@@ -62,14 +62,14 @@ onMounted(() => {
 
 <style scoped>
 .q3cc-footer-wrap {
-  margin: 18px auto 18px;
+  margin: 4px auto 10px;
   padding: 0 24px;
   max-width: 1152px;
   text-align: center;
 }
 
 .q3cc-overview-text {
-  margin: 6px 0 0;
+  margin: 2px 0 0;
   font-size: 12px;
   line-height: 1.5;
   color: var(--vp-c-text-2);
