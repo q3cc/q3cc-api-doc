@@ -83,6 +83,10 @@ onMounted(() => {
   margin: 0;
 }
 
+:deep(.info-spacing-copyright) {
+  margin-left: 0;
+}
+
 @media (max-width: 768px) {
   .q3cc-footer-wrap {
     padding: 0 16px;
