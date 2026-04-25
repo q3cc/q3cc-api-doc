@@ -244,6 +244,15 @@ b {
   background-color: transparent !important;
 }
 
+.VPNavBar .divider,
+.VPNavBar .divider-line {
+  background-color: transparent !important;
+}
+
+.VPNavBar.screen-open {
+  border-bottom-color: transparent !important;
+}
+
 .DocSearch-Button {
   background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
@@ -271,6 +280,7 @@ b {
 }
 
 .VPLocalNav {
+  border-bottom-color: transparent !important;
   background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
