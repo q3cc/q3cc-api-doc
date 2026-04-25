@@ -227,13 +227,25 @@ b {
  * -------------------------------------------------------------------------- */
 
 .VPNavBar:not(.has-sidebar):not(.home.top) {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
+.VPNavBar.home:not(.top),
+.VPNavBar.home:not(.top) .content-body {
+  background-color: rgba(255, 255, 255, 0) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.VPNavBar.home:not(.top) .divider,
+.VPNavBar.home:not(.top) .divider-line {
+  background-color: transparent !important;
+}
+
 .DocSearch-Button {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
@@ -245,21 +257,21 @@ b {
 }
 
 .curtain {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 @media (min-width: 960px) {
   .VPNavBar:not(.home.top) .content-body {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0) !important;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
 }
 
 .VPLocalNav {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0) !important;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
