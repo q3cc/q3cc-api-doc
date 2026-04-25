@@ -210,3 +210,14 @@ strong,
 b {
   font-weight: 700;
 }
+
+.nprogress .bar {
+  background: var(--vp-home-hero-name-background);
+  height: 3px;
+}
+
+.nprogress .peg {
+  box-shadow:
+    0 0 10px var(--vp-c-brand-1),
+    0 0 5px var(--vp-c-brand-2);
+}
